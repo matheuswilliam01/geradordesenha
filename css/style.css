@@ -1,0 +1,108 @@
+* {
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 32, 32);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 65rem;
+    margin-bottom: 1.5rem;
+}
+
+.container_input {
+    width: 35rem;
+    margin: 1rem 0;
+}
+
+.container_input span {
+    color: #fff;
+    font-size: 22px;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 1.125rem;
+    border-radius: 5px;
+    background-color: rgb(194, 194, 194);
+    outline: none;
+    margin-top: 1.2rem;
+}
+
+.button {
+    height: 3rem;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #05dede;
+    border: 1px solid rgb(68, 68, 68);
+
+}
+
+.container_resultado {
+    width: 35rem;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 3.75rem;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container_resultado:hover .tooltip {
+    visibility: visible;
+    bottom: 3rem;
+    opacity: 1;
+}
